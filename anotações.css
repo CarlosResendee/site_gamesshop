@@ -1,0 +1,174 @@
+/*------------------------------------ FONTE DO TEXTO DO GOOGLE FONTS ------------------------------------*/
+/*Pesquisamos a fonte no google fonts e copiamos os links para html e para Css. Aqui definimos a fonte 
+para Titulo H2 e Cabecaçho. Neste caso, tudo que ta no cabeçalho, H1 e os menus, ficaram com a mesma fonte.*/
+header, section h2{
+    font-family: 'Bungee', cursive;
+}
+
+/*Formatamos a espessura da fonte. Por padrão, ficou bold(negrito). Para deixarmos normal, especificamos com fonte normal.*/
+header h1, section h2{
+    font-weight: normal;
+}
+
+/*O restante da conteudo que nao nao titulos e links, especificamos essa fonte abaixo. vai aplicar a tudo dentro do body*/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*------------------------------------ SEÇÃO CABEÇALHO ------------------------------------*/
+
+* {/*resetamos a pagina e deixamos com esses parametros*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Fomatamos o cabelhado e acor de fundo*/
+header{
+    padding: 16px 0;
+    background-color: #182c61;
+    color: #ecf0f1;
+}
+/*Formatamos os links do cabecalho*/
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 24px;    
+}
+/*Formatamos cor do conteudo do link Menu*/
+header nav li a{
+    color: #ecf0f1;
+    text-decoration: none;
+}
+/*Formatamos o tamanho da pagina que sera exibido*/
+.container {
+    max-width: 1280px;
+    width: 100%; /*Tddo conteudo vai ocupar 100% do espaco definido no max-width*/
+    margin-top: 0 auto;
+}
+/*Formatamos o conteudo do cabelho onde vai ficar na margem sup e inf no centro e justificado.*/
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*------------------------------------ SEÇÃO SOBRE ------------------------------------*/
+/*Definimos a class brands-list img nas listas nao ordenadas para configurar o tamanho das imagens do nintendo, xbox e playstatio*/
+.brands-list img{
+    height: 24px;
+}
+
+/*Definimos essa class que as imagens vao ficar em linha e que o espacamento entre elas serao de 8px*/
+.brands-list li{
+    display: inline; 
+    margin-right: 8px;   
+}
+/*Aqui definimos que o conteudo do container vai ser flexivel(display flex) e justificado (Justify-content: space-between).
+O align flex start alinha o paragrafo e h2 na parte superior*/
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/*Definimos uma margem entre a seçao e o cabeçalho*/
+section{
+    padding: 24px 0;
+}
+/*Definimos a margem do titulo h2 com o paragrafo*/
+section h2{
+    margin-bottom: 16px;
+}    
+/*definimos a margem de um paragrafo para outro*/
+section p{
+    margin-bottom: 8px;
+}
+/*Definimos o espacamento da imagem da logo com os paragrafos do lado direito.*/
+.store-front{
+    margin-right: 32px;
+}
+/*Definimos que tudo que esta na seção tera essa cor.*/
+section{
+    color: #182c61;
+}
+
+/*------------------------------------ Formulario e Rodape ------------------------------------*/
+/*Aqui formatamos os titulos H3 e botao enviar do formulario*/
+section h3, form button{
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+    margin-bottom: 16px;
+
+}
+
+/*Aqui definimos o tamanho das imagens das redes sociais.*/
+.social-links img{
+    height: 24px; 
+}
+
+/*Aqui definimos o alinhamento das img das redes sociais e o espacamento entre elas*/
+.social-links li{
+    display: inline;
+    margin-right: 8px;
+}
+
+/*Aqui tiramos a marcação da lista. ela veio com pontinho por ser lista nao ordenada.*/
+.social-links li a {
+    text-decoration: none;
+}
+
+/*Aqui configuramos que o container do contato vai ficar alinhado com restante da pagina*/
+#contact .container{
+    display: block;
+}
+
+/*Aqui definimos a disposicao na tela e posicao na pagina justificado*/
+.contact-methods{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Aqui configuramos os botoes de input, para ficar em blocos, e ter a mesmo tamanho*/
+form input, textarea, button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+/*Aqui travamos o campo de texto para nao ser expandido pelo usuario. isso pode baguncar o layout da pagina*/
+form textarea{
+    resize: none;
+    padding: 16px;
+    height: 180px;
+}
+
+/*aqui definimos a configuração do botao enviar.*/
+form button{
+    background-color: #182c61; /*cor de fundo*/
+    color: #fff;/*cor do texto*/
+    border: none; /*sem borda*/
+    cursor: pointer; /*quando colocar o cursor encima, mostrar o dedo*/
+}
+
+/*aqui configuramos que quando colocar o cursor vai mudar a cor para outra cor*/
+form button:hover{
+    background-color: #4c69bb;
+}
+
+/*Aqui definimos a fonte para os input e textarea*/
+form input, textarea{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*aqui definimos que quando a caixa tiver selecionada a cor da bonda sera a definida*/
+input:focus, textarea:focus{
+    outline-color: #182c61;
+}
+
+/*aqui definimos a cor de fundo, cor do texto e margem do rodape*/
+footer{
+    background-color: #182c61;
+    color:#ecf0f1;
+    padding: 16px;
+}
